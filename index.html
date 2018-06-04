@@ -11,18 +11,30 @@
 
     <script src="app.js"></script>
 </head>
-<body style="background-color:#eaff4f">
-  
-  <input type="text"/>
-  <button id="btn">Przelicz</button>
+<body>  
+  <header>
+    <h2>Przelicznik walutowy</h2>
+    <div class ="row-center">
+    <div class="data">DATA: </div>
+    <input type="text" placeholder="kwota w PLN"/><button id="btn">Przelicz</button>
+  </header>
+  <section>
+    <div class ="row row-titles">
+      <div>Waluta</div><div class="rate">Aktualny kurs</div><div class="sum">Przelicznik kwoty</div>
+    </div>
   <div class ="row">
-    <div id="currency_euro"></div><div id="output1a"></div><div id="output1"></div>
+    
+    <div id="currency_euro"></div><div class="rate" id="output1a"></div><div class="sum" id="output1"></div>
   </div>
   <div class ="row">
-    <div id="currency_dolar"></div><div id="output1b"></div><div id="output2"></div>
+    <div id="currency_dolar"></div><div class="rate" id="output1b"></div><div class="sum"id="output2"></div>
   </div>
   <div class ="row">
-    <div id="currency_funt"></div><div id="output1c"></div><div id="output3"></div>
+    <div id="currency_funt"></div><div class="rate" id="output1c"></div><div class="sum"id="output3"></div>
   </div>
+  <div class ="row">
+      <div id="currency_frank"></div><div class="rate" id="output1d"></div><div class="sum"id="output4"></div>
+    </div>
+</section>
 </body>
 </html>
