@@ -29,15 +29,18 @@ $.getJSON("https://api.nbp.pl/api/exchangerates/rates/c/chf/today/?format=json",
         })
       //pobierz dolar
       $.getJSON("https://api.nbp.pl/api/exchangerates/rates/c/usd/today/?format=json", function (data) {      
-            $('#output2').html(wpis / data.rates[0].bid);                
+            let dolar = wpis / data.rates[0].bid
+            $('#output2').html(dolar.toFixed(3) + ' USD');                
         })
             //pobierz funty
       $.getJSON("https://api.nbp.pl/api/exchangerates/rates/c/gbp/today/?format=json", function (data) {      
-            $('#output3').html(wpis / data.rates[0].bid);
+            let funt = wpis / data.rates[0].bid
+            $('#output3').html(funt.toFixed(3) + ' GPB'); 
         })
         //pobierz franki
       $.getJSON("https://api.nbp.pl/api/exchangerates/rates/c/chf/today/?format=json", function (data) {      
-        $('#output4').html(wpis / data.rates[0].bid);
+            let frank = wpis / data.rates[0].bid
+            $('#output4').html(frank.toFixed(3) + ' CHF'); 
     })
     })
 
