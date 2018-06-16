@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -11,12 +12,17 @@
 
     <script src="app.js"></script>
 </head>
-<body>  
+<body>
+  <div class="mainDiv">
   <header>
     <h2>Przelicznik walutowy</h2>
     <div class ="row-center">
     <div class="data">DATA: </div>
     <input type="text" placeholder="kwota w PLN"/><button id="btn">Przelicz</button>
+    <select>
+      <option id="pln">PLN</option>
+      <option id="eur">EUR</option>
+    </select>
   </header>
   <section>
     <div class ="row row-titles">
@@ -36,7 +42,18 @@
       <div id="currency_frank"></div><div class="rate" id="output1d"></div><div class="sum"id="output4"></div>
     </div>
     <p style="text-align:center">Powered by NBP Web API</p>
+    <div class="euroKurs"></div>
 </section>
+
+
+<div class="rzad">
+  <div class="kwadrat"><h1>das dasd</h1></div>
+  <div class="kwadrat"><h1>das dasd</h1></div>
+  <div class="kwadrat"><h1>das dasd</h1></div>
+ 
+ </div>
+</div>
+
 
 </body>
 </html>
