@@ -55,33 +55,7 @@ $.getJSON("https://api.nbp.pl/api/exchangerates/rates/c/chf/today/?format=json",
         console.log('działa');
     }
 })
-    const apiURL = 'https://api.nbp.pl/api/exchangerates/rates/c/eur/today/?format=json';
-    
-    function insertData(bid) {
-        let euroKurs = $('.euroKurs');
-        let euroData = $('<p>'+bid+'</p>');
-        euroKurs.append(euroData);
-    }
 
-    function readData() {
-        $.ajax({
-            url : apiURL,
-            type: "get",
-            dataType : 'json'
-        })
-        .done(function(response){
-            console.log(response.rates[0].bid);//sprawdzam w konsoli zawartosc obiektu jsona
-             insertData(response.rates[0].bid);
-         })
-         .fail(function(err){
-             console.log(err);
-            })
-    }
-   
-    console.log(readData());
     
-    localStorage.setItem('itemName','Hello from localStorage!');
-    var data = localStorage.getItem('itemName');
-    console.log(data)
 
 });
