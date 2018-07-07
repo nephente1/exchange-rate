@@ -13,6 +13,9 @@ body{
     align-content: center;
     justify-content: center;
 }
+section{
+    margin-bottom: 25px;
+}
 
 .mainDiv{
     background:rgba(255,255,255,0.9);
@@ -75,11 +78,7 @@ select{
     margin: 0 30px 0 0;
     padding:5px;
 }
-section{
-    /* display:flex;
-    justify-content: center;
-    flex-direction: column; */
-}
+
 .row{  
     width:90%;
     min-width:340px;
@@ -92,6 +91,7 @@ section{
 .row div{   
     width:100%;
     min-width:100px;
+    padding:8px;
 }
 .row .rate{
    width:100%;
@@ -109,7 +109,7 @@ section{
     
 }
 .row:last-of-type {
-    margin-bottom:5px;
+    margin-bottom:15px;
 }
 
 .rzad{
