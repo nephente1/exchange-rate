@@ -6,7 +6,7 @@
                 $('.data').html('Aktualizacja danych: '+ data.rates[0].effectiveDate);         
             })
 
-$.get("http://api.nbp.pl/api/exchangerates/rates/c/usd/?format=json", function (data) {           
+$.get("https://api.nbp.pl/api/exchangerates/rates/c/usd/?format=json", function (data) {           
                 $('#currency_dolar').html(data.code);            
                 $('#output1b').html(data.rates[0].bid.toFixed(2)) ;                         
             })
